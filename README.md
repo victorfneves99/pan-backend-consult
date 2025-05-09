@@ -31,7 +31,7 @@ Este repositório contém um microserviço desenvolvido como parte de um desafio
 ## 🚀 Como executar
 
 ```bash
-git clone https://github.com/seu-usuario/pan-backend-consult.git
+git clone https://github.com/victorfneves99/pan-backend-consult.git
 cd pan-backend-consult
 ./mvnw spring-boot:run
 ```
