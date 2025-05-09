@@ -1,19 +1,26 @@
 package com.pan.backend.core.domain;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotBlank;
 
 public class Endereco {
     @NotBlank
+    @Schema(example = "39400000", description = "CEP do cliente")
     private String cep;
     @NotBlank
+    @Schema(example = "Rua das Flores")
     private String logradouro;
     @NotBlank
+    @Schema(example = "Ap 101")
     private String complemento;
     @NotBlank
+    @Schema(example = "Centro")
     private String bairro;
     @NotBlank
+    @Schema(example = "Montes Claros")
     private String cidade;
     @NotBlank
+    @Schema(example = "MG")
     private String estado;
 
     public Endereco() {}
