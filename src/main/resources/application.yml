@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: pan-backend
+  datasource:
+    url: jdbc:h2:mem:pan;DB_CLOSE_DELAY=-1
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+  level:
+    root: INFO
