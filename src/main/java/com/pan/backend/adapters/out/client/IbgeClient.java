@@ -26,7 +26,7 @@ public class IbgeClient {
         return Arrays.asList(estados);
     }
 
-    @Cacheable(value = "municipios", key = "#estadoId")
+    @Cacheable(value = "municipios", key = "#root.args[0]")
     public List<MunicipioResponse> buscarMunicipiosPorEstado(Long idEstado) {
         log.info("Buscando municipios do estado {}", idEstado);
         String url = "https://servicodados.ibge.gov.br/api/v1/localidades/estados/{id}/municipios";
