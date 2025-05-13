@@ -1,9 +1,12 @@
 package com.pan.backend.adapters.out.client.dto;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@Getter @Setter
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class MunicipioResponse {
     private Long id;
     private String nome;
