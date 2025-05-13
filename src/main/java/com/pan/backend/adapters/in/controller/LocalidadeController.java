@@ -13,8 +13,11 @@ import com.pan.backend.adapters.out.client.dto.MunicipioResponse;
 import com.pan.backend.adapters.out.client.dto.ViaCepResponse;
 import com.pan.backend.application.usecase.LocalidadeServiceImpl;
 
+import lombok.extern.slf4j.Slf4j;
+
 @RestController
-@RequestMapping("/localidades")
+@RequestMapping("/v1/localidades")
+@Slf4j
 public class LocalidadeController {
 
     private final LocalidadeServiceImpl localidadeService;

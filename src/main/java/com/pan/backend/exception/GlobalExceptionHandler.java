@@ -17,7 +17,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 import jakarta.servlet.http.HttpServletRequest;
 
 @RestControllerAdvice
-class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
+public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
     private static final String SERVICE_NAME = "Pan Backend Consult";
 
     @ExceptionHandler(Exception.class)
